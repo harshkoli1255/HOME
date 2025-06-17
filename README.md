@@ -32,7 +32,7 @@ A cross-platform Python CLI tool to manage your JioFiber router conveniently fro
 
 2. **Install Python dependencies (preferably in a virtual environment):**
    ```bash
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
 
 3. **Set Environment Variables:**
