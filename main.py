@@ -19,6 +19,7 @@ from rich.progress import Progress
 from colorama import init, Fore,Style
 from tabulate import tabulate
 from scan import perform_scan, display_devices, load_known_devices
+from dotenv import load_dotenv
 
 init()
 url1 = "http://192.168.29.1/"
@@ -115,12 +116,15 @@ def openPage():
 
 def login():
     try:
+        load_dotenv()
         username_field = wait.until(EC.visibility_of_element_located((By.ID, "tf1_userName")))
         username_field.clear()
-        username_field.send_keys(credentials.username)
+        # username_field.send_keys(credentials.username)
+        username_field.send_keys(os.getenv("username"))
         password_field = wait.until(EC.visibility_of_element_located((By.ID, "tf1_password")))
         password_field.clear()
-        password_field.send_keys(credentials.password)
+        # password_field.send_keys(credentials.password)
+        password_field.send_keys(os.getenv("password"))
         
         wait.until(EC.visibility_of_element_located((By.XPATH, "//button[normalize-space()='Login']"))).click()
         try:
