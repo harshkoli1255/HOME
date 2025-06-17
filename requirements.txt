@@ -1,0 +1,12 @@
+selenium
+tabulate
+pyreadline
+colorama
+rich
+webdriver-manager
+scapy
+netifaces
+requests
+html5lib
+bs4
+ua-generator
