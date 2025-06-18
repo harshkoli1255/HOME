@@ -108,6 +108,7 @@ Simply enter the desired option (number or command) and follow the prompts.
 - **Selenium/ChromeDriver issues:** Ensure your Chrome browser and the `webdriver-manager` package are up-to-date.
 - **Network Scan:** Requires `scapy` and may need elevated privileges.
 
+---
 
 ## Author
 
