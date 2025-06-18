@@ -87,7 +87,7 @@ Simply enter the desired option (number or command) and follow the prompts.
 
 ## Requirements
 
-- Python 3.10+
+- Python 3.7+
 - Chrome browser (for Selenium WebDriver automation)
 - ChromeDriver (managed automatically if using `webdriver-manager`)
 - All dependencies from `requirements.txt`
